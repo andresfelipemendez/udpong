@@ -1,0 +1,84 @@
+# Build outputs
+client
+client.exe
+server
+server.exe
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.pdb
+*.ilk
+*.exp
+
+# Build directories
+build/
+out/
+cmake-build-*/
+.vs/
+x64/
+x86/
+Debug/
+Release/
+MinSizeRel/
+RelWithDebInfo/
+
+# IDE files
+.vscode/
+.idea/
+*.xcodeproj/
+*.xcworkspace/
+*.sln
+*.vcxproj
+*.vcxproj.*
+.DS_Store
+Thumbs.db
+
+# SDL libraries (downloaded/built locally - not in deps/)
+/SDL2*/
+/SDL3/
+/SDL3-*/
+/SDL3_image/
+/SDL3_image-*/
+/SDL3_mixer/
+/SDL3_mixer-*/
+/SDL_mixer-*/
+/SDL3_ttf/
+/SDL3_ttf-*/
+/SDL3_net/
+/SDL3_net-*/
+/SDL_net-*/
+
+# deps build directories (submodules themselves are tracked)
+deps/*/build/
+
+# Downloaded archives
+*.zip
+*.tar.gz
+*.tar.xz
+*.7z
+
+# Nakama Docker data
+nakama/modules/*.so
+nakama/modules/go/go.sum
+
+# Docker volumes (if any local data)
+postgres-data/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.local
