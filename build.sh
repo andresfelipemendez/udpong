@@ -110,9 +110,14 @@ echo "Compiling client..."
 $CC $CFLAGS $INCLUDES client.c -o client $LIBS $RPATH
 
 echo ""
+echo "Compiling server..."
+$CC $CFLAGS server.c -o server
+
+echo ""
 echo "Build complete!"
 echo ""
-echo "Run with: ./client"
+echo "Run client with: ./client"
+echo "Run server with: ./server"
 echo ""
 echo "To start the Nakama server:"
 echo "  cd nakama && docker-compose up -d"
